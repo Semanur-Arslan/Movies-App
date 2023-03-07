@@ -17,7 +17,7 @@ const handleFormSubmit = (event) => {
                 <input  
                 onChange={props.searchM} 
                 type="text" 
-                class="form-control" 
+                className='form-control' 
                 placeholder="Search a movie"
                 />
                 </div>
