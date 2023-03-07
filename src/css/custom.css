@@ -5,3 +5,7 @@
     overflow:hidden;
 
 }
+
+.btn-success {
+    float: right;
+}

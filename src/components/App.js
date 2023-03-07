@@ -2,6 +2,7 @@ import React, { useState, useEffect }  from 'react';
 import SearchBar from './SearchBar';
 import MovieList from './MovieList';
 import axios from 'axios';
+import AddMovie from './AddMovie';
 
 const App = () => {
     const [değer, setDeger] = useState(
@@ -79,9 +80,12 @@ const [idea, setIdea] = useState('');
     return (
         <div className='container'>
             <div className='row'>
-                <div className='col-lg-12'>
+                <div className='col-lg-10'>
                     <SearchBar 
                     searchM={searchMovie}/>
+                </div>
+                <div className='col-lg-2 '>
+                <button type="button" className='btn btn-success mt-5 px-3 '>Add Movie</button>
                 </div>
             </div>
 
