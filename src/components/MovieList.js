@@ -2,6 +2,16 @@ import React from 'react';
 
 const MovieList = (props) => {
 
+
+    // Overview Length Function
+    const turuncateOverview = (string, maxLength) =>{
+        if(string.length >= maxLength){
+            return `${string.substring(0, maxLength)} ...`
+        }else{
+            return string
+        }
+    }
+
   
     return (
         <div className='row'>
@@ -13,7 +23,7 @@ const MovieList = (props) => {
                     </div>
                     <div className='card-body'>
                         <h5 className='card-title'>{movie.name}</h5>
-                        <p className='card-text textWidth'>{movie.overview}</p>
+                        <p className='card-text'>{turuncateOverview(movie.overview, 100)}</p>
                         <div className='d-flex justify-content-between align-items-center' >
                         <button   type="button"  onClick={(event) => props.deleteM(movie)} className="btn btn-outline-danger">Delete</button>
                         <h3><span className='badge bg-warning text-dark'>{movie.rating}</span></h3>

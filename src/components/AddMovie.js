@@ -27,18 +27,6 @@ function AddMovie(props) {
     }
 
     
-   
-       
-   
-
-   
-
-   
- 
-  
-
-
-
     return (
         <div className="container">
             <div className="row d-flex justify-content-center">
