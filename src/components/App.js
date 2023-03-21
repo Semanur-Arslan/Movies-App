@@ -3,11 +3,13 @@ import SearchBar from './SearchBar';
 import MovieList from './MovieList';
 import axios from 'axios';
 import AddMovie from './AddMovie';
-import { BrowserRouter as Router, Routes, Route, Link, Navlink } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+
+
 
 
 const App = () => {
-    const [değer, setDeger] = useState(
+    const [deger, setDeger] = useState(
         {
             "movies": []
         }
@@ -24,11 +26,16 @@ const App = () => {
     //     setDeger({movies : data})
     //   }, []);
 
+
+
     // data call (axios)
-    useEffect(async () => {
-        const response = await axios.get('http://localhost:3003/movies');
-        console.log(response);
+    async function fetchData() {
+        let response = await axios.get('http://localhost:3001/movies');
         setDeger({ movies: response.data })
+    }
+
+    useEffect(() => {
+        fetchData();
     }, []);
 
 
@@ -46,7 +53,7 @@ const App = () => {
 
     // DELETE FUNCTİON(axios)
     function deleteMovie(movie) {
-        axios.delete(`http://localhost:3003/movies/${movie.id}`)
+        axios.delete(`http://localhost:3001/movies/${movie.id}`)
         const newMovieList = this.movies.filter(
             m => m.id !== movie.id
         );
@@ -67,8 +74,8 @@ const App = () => {
 
     };
 
-
-    let filterMovied = değer.movies.filter(
+    //FILTER FUNCTİON
+    let filterMovied = deger.movies.filter(
         (movie) => {
             if (idea === '') {
                 return movie
@@ -78,6 +85,19 @@ const App = () => {
         }
     );
 
+    // ADD MOVİE FUNCTİON
+    let movieAdd = async (movie) => {
+        await axios.post('http://localhost:3001/movies/', movie);
+        setDeger({
+            movies: this.movies.concat([movie])
+        });
+
+    }
+
+
+    
+ 
+     
 
     return (
         <Router>
@@ -92,7 +112,7 @@ const App = () => {
                                         searchM={searchMovie} />
                                 </div>
                                 <div className='col-lg-2 '>
-                                    <button type="button" className='btn btn-success mt-5 px-3 float-end '>Add Movie</button>
+                                    <Link to='/add' type="button" className='btn btn-success mt-5 px-3 float-end '>Add Movie</Link>
                                 </div>
                             </div>
 
@@ -105,7 +125,9 @@ const App = () => {
 
                 </Route>
 
-                <Route path='add' element={<AddMovie />} />
+                <Route  path='add' element={<AddMovie
+                onAddMovie={(movie) => {movieAdd(movie)}}
+                />} />
 
             </Routes>
         </Router >
