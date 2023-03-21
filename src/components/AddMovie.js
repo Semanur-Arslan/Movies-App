@@ -1,7 +1,6 @@
 import React from "react";
 import serialize from "form-serialize";
 import { useNavigate } from "react-router-dom";
-import { Alert } from "bootstrap";
 
 
 
@@ -21,6 +20,10 @@ function AddMovie(props) {
         
          navigate('/');
          navigate(0); 
+        
+         
+
+        
     }
 
     

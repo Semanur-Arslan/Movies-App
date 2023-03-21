@@ -82,11 +82,12 @@ const App = () => {
         (movie) => {
             if (idea === '') {
                 return movie
+                
             } else {
                 return movie.name.toLowerCase().indexOf(idea.idea.toLowerCase()) !== -1
             }
         }
-    );
+    ).sort(function(a, b){return a.id < b.id ? 1 : a.id > b.id ? -1 : 0});
 
     // ADD MOVİE FUNCTİON
     let movieAdd = async (movie) => {
