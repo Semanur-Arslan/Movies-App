@@ -8,7 +8,10 @@ import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 
 
 
+
 const App = () => {
+   
+
     const [deger, setDeger] = useState(
         {
             "movies": []
@@ -91,13 +94,10 @@ const App = () => {
         setDeger({
             movies: this.movies.concat([movie])
         });
+       
+
 
     }
-
-
-    
- 
-     
 
     return (
         <Router>
@@ -127,6 +127,7 @@ const App = () => {
 
                 <Route  path='add' element={<AddMovie
                 onAddMovie={(movie) => {movieAdd(movie)}}
+                
                 />} />
 
             </Routes>

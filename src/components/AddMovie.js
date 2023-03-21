@@ -1,20 +1,34 @@
 import React from "react";
 import serialize from "form-serialize";
+import { useNavigate } from "react-router-dom";
+import { Alert } from "bootstrap";
+
 
 
 
 
 function AddMovie(props) {
-   
+
+    const navigate = useNavigate();
+    
 
 
-    const handleFormSubmit = (e) => {
+    const handleFormSubmit =(e) => {
         e.preventDefault(); 
         const newMovieobj = serialize(e.target, { hash: true }); 
         console.log(newMovieobj);
-        props.onAddMovie(newMovieobj);  
-         
+        props.onAddMovie(newMovieobj);
+        
+         navigate('/');
+         navigate(0); 
     }
+
+    
+   
+       
+   
+
+   
 
    
  
@@ -46,7 +60,7 @@ function AddMovie(props) {
                         <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" name='overview'></textarea>
                     </div>
 
-                    <button type="submit" className='btn btn-success mt-5 px-3 '>Add Movie</button>
+                    <button  type="submit" className='btn btn-success mt-5 px-3 '>Add Movie</button>
                 </form>
             </div>
 
