@@ -12,7 +12,7 @@ const handleFormSubmit = (event) => {
 
     return (
         <form onSubmit={handleFormSubmit}>
-            <div className='form-row mb-5 mt-5'>
+            <div className='form-row  mt-5'>
                 <div className='col-12 '>
                 <input  
                 onChange={props.searchM} 

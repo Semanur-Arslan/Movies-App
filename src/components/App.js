@@ -3,14 +3,15 @@ import SearchBar from './SearchBar';
 import MovieList from './MovieList';
 import axios from 'axios';
 import AddMovie from './AddMovie';
-import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import EditMovie from './EditMovie';
 
 
 
 
 
 const App = () => {
-   
+
 
     const [deger, setDeger] = useState(
         {
@@ -82,12 +83,12 @@ const App = () => {
         (movie) => {
             if (idea === '') {
                 return movie
-                
+
             } else {
                 return movie.name.toLowerCase().indexOf(idea.idea.toLowerCase()) !== -1
             }
         }
-    ).sort(function(a, b){return a.id < b.id ? 1 : a.id > b.id ? -1 : 0});
+    ).sort(function (a, b) { return a.id < b.id ? 1 : a.id > b.id ? -1 : 0 });
 
     // ADD MOVİE FUNCTİON
     let movieAdd = async (movie) => {
@@ -95,7 +96,7 @@ const App = () => {
         setDeger({
             movies: this.movies.concat([movie])
         });
-       
+
 
 
     }
@@ -126,12 +127,18 @@ const App = () => {
 
                 </Route>
 
-                <Route  path='add' element={<AddMovie
-                onAddMovie={(movie) => {movieAdd(movie)}}
-                
+                <Route path='add' element={<AddMovie
+                    onAddMovie={(movie) => { movieAdd(movie) }}
+
                 />} />
 
+
+                <Route path='edit/:id' element={<EditMovie/>} />
+
+
             </Routes>
+
+           
         </Router >
     );
 
