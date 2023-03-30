@@ -8,25 +8,39 @@
       "id": 7
     },
     {
-      "name": "Saw 3D",
-      "rating": "7.5",
-      "overview": "SAW legacy, a group of Jigsaw survivors gathers to seek the support of self-help guru and fellow survivor Bobby Dagen, a man whose own dark secrets unleash a new wave of terror.",
-      "imageURL": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/qHCZ6LjtmqWDfXXN28TlIC9OppK.jpg",
-      "id": 11
+      "name": "Avatar: Suyun Yolu (2022)",
+      "rating": "7.7",
+      "imageURL": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/bidENTLt6baEa2ieNT95brFtsvb.jpg",
+      "overview": "Avatar'da yaşanan olaylardan birkaç yıl sonra Jake ve Neytiri Pandora'da kendi ailelerini kurmuştur. Ancak onlar evlerini terk etmek zorunda kalır. Bu yüzden Jake ve Neytiri, suyun yüzeri ve altı dahil olmak üzere Pandora'nın dışındaki yerleri keşfetmeye başlar.",
+      "id": 15
     },
     {
-      "name": "Hostage",
-      "rating": "6.3",
-      "imageURL": "https://image.tmdb.org/t/p/w600_and_h900_bestv2/4hne3v6jN4MlCnhSkxOW7YspJhr.jpg",
-      "overview": "When a mafia accountant is taken hostage on his beat, a police officer – wracked by guilt from a prior stint as a negotiator – must negotiate the standoff, even as his own family is held captive by the mob.",
-      "id": 13
+      "name": "Esaretin Bedeli (1994)",
+      "rating": "8.7",
+      "overview": "Genç ve başarılı bir banker olan Andy Dufresne, karısını ve onun sevgilisini öldürmek suçundan ömür boyu hapse mahkum edilir ve Shawshank hapishanesine gönderilir. İşkence, tecavüz, dayak dahil her türlü kötü koşulun hüküm sürdüğü hapishane koşullarında, Andy'nin hayata bağlı ve her daim iyi bir şeyler bulma çabası içindeki hali, çevresindeki herkesi çok etkileyecektir. Bir süre sonra parmaklıkların arkasında bile özgür bir yaşam olabileceğine bütün mahkumları inandırır. Bu mahkumlardan biri olan Ellis Boyd \"Red\" ve Andy, unutulmaz bir dostluk kurarak hapishaneyi bambaşka bir yer haline getirirler.",
+      "imageURL": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/dXyIK3s8ZN7FH3AoaeyaBqX0eoJ.jpg",
+      "id": 16
     },
     {
-      "name": "Deneme",
-      "rating": "10",
-      "imageURL": "https://picsum.photos/200/300",
-      "overview": "Yeni film ekleme denemesi",
-      "id": 14
+      "name": "Yeşil Rehber (2018)",
+      "rating": "8.2",
+      "imageURL": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/vEzS2VOhdpBIANoEYBHRvcaeBXD.jpg",
+      "overview": "Kibar bir piyanist, Amerika'nın güney ucunda çıkacağı turne için çetin ceviz bir şoför tutar. İkili, ırkçılığın yaygın olduğu bu yabancı topraklarda birçok macera yaşar.",
+      "id": 18
+    },
+    {
+      "name": "Forrest Gump - (1994)",
+      "rating": "8.7",
+      "overview": "Forrest Gump, zeka seviyesi 75 olan bir erkeğin hayatını ele alıyor. Zeka seviyesi nedeni ile devlet okullarına girmekte bile zorlanan Forrest Gump zamanla akla mantığa uymayan başarılara imza atıyor. Her ne kadar zeka seviyesi düşük olsa da fiziksel olarak son derece sağlam olan Forrest Gump, zamanla gelişen olaylar zincirinde bizi hayal edemeyeceğimiz bir dünyaya götürüyor.",
+      "imageURL": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg",
+      "id": 19
+    },
+    {
+      "name": "Murder Mystery 2 ",
+      "rating": "7.4",
+      "overview": " İlk gizemli cinayet vakalarını çözmelerinden dört yıl sonra artık tam zamanlı birer dedektif olan Nick ve Audrey Spitz zor durumdaki özel dedektiflik bürolarını ayakta tutmaya çalışmaktadır. Arkadaşları Mihrace’nin düğününe katılmaları için özel bir adaya davet edilen Spitz çifti, kutlamaların başlamasının hemen ardından damadın fidye için kaçırılmasıyla birlikte kendilerini belanın tam ortasında bulur. Artık göz kamaştırıcı misafirler, aile üyeleri ve hatta gelinin kendisi bile birer şüpheli hâline gelmiştir. Hayal ettikleri her şeye kavuşabilecekleri bir fırsat yakalayan Nick ve Audrey Spitz, dedektiflik bürolarının nihayet başarıya ulaşmasını sağlamak ve uzun zamandır erteledikleri Paris seyahatini gerçekleştirmek için son derece tehlikeli bir maceraya atılır.",
+      "imageURL": "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/5wpVy0KUWzDKDKgrayM0Q8lXOiK.jpg",
+      "id": 20
     }
   ]
 }

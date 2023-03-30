@@ -5,22 +5,21 @@ const MovieList = (props) => {
 
 
     // Overview Length Function
-    const turuncateOverview = (string, maxLength) =>{
-        if(string.length >= maxLength){
-            return `${string.substring(0, maxLength)} ...`
-        }else{
-            return string
-        }
-    }
+     const turuncateOverview = (string, maxLength) =>{
+         if(!string) return null;
+         if(string.length <= maxLength) return string;
+         if(string.length > maxLength) return `${string.substring(0, maxLength)} ...`
+         
+     }
 
-  
+     
     return (
         <div className='row'>
 
             {props.movies.map((movie) => (
                 <div className='col-lg-4 ' key={movie.id}>
                     <div className='card mt-5'>
-                        <img className='card-img-top' src={movie.imageURL} />
+                        <img alt="movie img" className='card-img-top' src={movie.imageURL} />
                     </div>
                     <div className='card-body border'>
                         <h5 className='card-title'>{movie.name}</h5>

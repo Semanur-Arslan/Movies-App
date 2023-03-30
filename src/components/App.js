@@ -91,13 +91,18 @@ const App = () => {
     ).sort(function (a, b) { return a.id < b.id ? 1 : a.id > b.id ? -1 : 0 });
 
     // ADD MOVİE FUNCTİON
-    let movieAdd = async (movie) => {
+    const movieAdd = async (movie) => {
         await axios.post('http://localhost:3001/movies/', movie);
         setDeger({
             movies: this.movies.concat([movie])
         });
+    }
 
 
+
+    // EDİT MOVİE FUNCTİON
+    const editMovie = async (id, updateMovie) => {
+        await axios.put(`http://localhost:3001/movies/${id}`, updateMovie);
 
     }
 
@@ -133,7 +138,8 @@ const App = () => {
                 />} />
 
 
-                <Route path='edit/:id' element={<EditMovie/>} />
+                <Route path='edit/:id' element={<EditMovie
+                onEditMovie={(id, movie) => {editMovie(id, movie)}}/>} />
 
 
             </Routes>
