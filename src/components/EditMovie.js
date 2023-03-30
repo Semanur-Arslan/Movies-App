@@ -79,9 +79,13 @@ function EditMovie(props) {
     }
 
 
+
     return (
+        
         <div className="container">
+            
             <div className="row d-flex justify-content-center">
+                
                 <h5 className="mt-5 d-flex justify-content-center border-bottom border-warning p-2">Movie Editing</h5>
                 <form onSubmit={handleFormSubmit} className="col-10  mt-5">
                     <div className="row">
@@ -113,7 +117,9 @@ function EditMovie(props) {
                     </div>
 
                     <button type="submit" className='btn btn-success mt-5 px-3 '>Edit</button>
+
                 </form>
+                
             </div>
 
         </div>
