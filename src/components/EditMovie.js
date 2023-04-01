@@ -36,7 +36,7 @@ function EditMovie(props) {
 
         fetchData()
 
-    }, []);
+    }, [useState]);
 
 
     // INPUT CHANGE

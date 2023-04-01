@@ -40,7 +40,7 @@ const App = () => {
 
     useEffect(() => {
         fetchData();
-    }, []);
+    });
 
 
     // DELETE FUNCTİON
